@@ -10,16 +10,13 @@ import AddPropertyModal from "../AddPropertyModal/AddPropertyModal";
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
-  // const scrolled = useHeaderScroll();
   const [modalOpened, setModalOpened] = useState(false);
-
-
+  
+  
   const handleAddPropertyClick = () => {
-      setModalOpened(true);
+    setModalOpened(true);
   };
-
-  // const classes = `${scrolled ? 'stickyHeader' : ''} h-wrapper`
-
+  
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">

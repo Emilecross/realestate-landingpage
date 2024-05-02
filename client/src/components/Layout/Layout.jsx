@@ -6,7 +6,7 @@ const Layout = () => {
 
   return (
     <>
-      <div style={{ background: "var(--darkblue)", overflow: "hidden" }}>
+      <div style={{ background: "var(--darkblue)", overflow: "clip"}}>
         <Header />
         <Outlet />
       </div>
