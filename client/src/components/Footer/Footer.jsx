@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div className="flexColStart f-right">
-          <span className="primaryText">Information</span>
+          <span className="primaryText">Contact Us</span>
           <span className="secondaryText">0449 101 907</span>
           <span className="secondaryText">admin@cnmproperty.com.au</span>
           <span className="secondaryText">7/8 Mcfarlane street Merrylands NSW 2145</span>

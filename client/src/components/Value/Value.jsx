@@ -10,11 +10,9 @@ import {
 import "react-accessible-accordion/dist/fancy-example.css";
 import {
   MdOutlineArrowDropDown,
-  MdOutlineArrowDropDownCircle,
 } from "react-icons/md";
 import data from "../../utils/accordion.jsx";
 import "./Value.css";
-// Demo styles, see 'Styles' section below for some notes on use.
 
 const Value = () => {
   return (
@@ -29,19 +27,23 @@ const Value = () => {
 
         {/* right */}
         <div className="flexColStart v-right">
-          <span className="orangeText">Our Value</span>
+          <span className="orangeText">Why choose us?</span>
 
-          <span className="primaryText">Value We Give to You</span>
+          <span className="primaryText">Value we bring</span>
 
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you.
+            We don't charge nasty hidden fees that other Real Estate Agents charge.
             <br />
-            We beleive a good blace to live can make your life better
+            The commission that you see is all that we will charge!
+          </span>
+
+          <span className="secondaryTextBold">
+            That's right! No advertising fees! Its ALL INCLUDED.
           </span>
 
           <Accordion
             className="accordion"
-            allowMultipleExpanded={false}
+            allowMultipleExpanded={true}
             preExpanded={[0]}
           >
             {data.map((item, i) => {
@@ -50,7 +52,6 @@ const Value = () => {
                 <AccordionItem className={`accordionItem ${className}`} uuid={i} key={i}>
                   <AccordionItemHeading>
                     <AccordionItemButton className="flexCenter accordionButton ">
-                        {/* just for getting state of item */}
                       <AccordionItemState>
                         {({ expanded }) =>
                           expanded

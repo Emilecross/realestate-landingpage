@@ -18,13 +18,14 @@
   gap: 1.5rem;
 }
 .mode {
-  width: 16rem;
+  width: 14rem;
   padding: 1rem;
   border: 0.8px solid rgba(128, 128, 128, 0.143);
   border-radius: 5px;
   gap: 1rem;
   transition: all 300ms ease-in;
 }
+
 .mode .button {
   width: 100%;
   background: var(--lightBlue);
@@ -47,6 +48,42 @@
 }
 
 .mode .button:hover {
+  background: var(--orange-gradient);
+  color: white;
+  scale: 0.8;
+}
+
+.modeEmail {
+  width: 20rem;
+  padding: 1rem;
+  border: 0.8px solid rgba(128, 128, 128, 0.143);
+  border-radius: 5px;
+  gap: 1rem;
+  transition: all 300ms ease-in;
+}
+
+.modeEmail .button {
+  width: 100%;
+  background: var(--lightBlue);
+  color: var(--blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.modeEmail > :nth-child(1) {
+  width: 100%;
+  gap: 1.6rem;
+}
+.modeEmail .detail .primaryText {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.modeEmail:hover {
+  scale: 1.1;
+  box-shadow: var(--shadow);
+}
+
+.modeEmail .button:hover {
   background: var(--orange-gradient);
   color: white;
   scale: 0.8;

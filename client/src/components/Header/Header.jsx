@@ -4,22 +4,22 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
-import { Link, NavLink } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
+import { Link } from "react-router-dom";
 import AddPropertyModal from "../AddPropertyModal/AddPropertyModal";
-import useAuthCheck from "../../hooks/useAuthCheck.jsx";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerColor = useHeaderColor();
+  // const scrolled = useHeaderScroll();
   const [modalOpened, setModalOpened] = useState(false);
-  const { loginWithRedirect, isAuthenticated, user, logout } = useAuth0();
-  const { validateLogin } = useAuthCheck();
 
 
   const handleAddPropertyClick = () => {
       setModalOpened(true);
   };
+
+  // const classes = `${scrolled ? 'stickyHeader' : ''} h-wrapper`
+
   return (
     <section className="h-wrapper" style={{ background: headerColor }}>
       <div className="flexCenter innerWidth paddings h-container">
@@ -28,27 +28,22 @@ const Header = () => {
           <img src="./logo.png" alt="logo" width={100} />
         </Link>
 
-        {/* menu */}
         <OutsideClickHandler
           onOutsideClick={() => {
             setMenuOpened(false);
           }}
         >
           <div
-            // ref={menuRef}
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            {/* add property */}
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
-            {/* login button */}
             <button className="button secondaryTextBlack" onClick={handleAddPropertyClick}>
               Get My Valuation
             </button>
           </div>
         </OutsideClickHandler>
 
-        {/* for medium and small screens */}
         <div
           className="menu-icon"
           onClick={() => setMenuOpened((prev) => !prev)}

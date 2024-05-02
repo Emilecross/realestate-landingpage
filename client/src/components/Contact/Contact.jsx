@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
-import { BsFillChatDotsFill } from "react-icons/bs";
 import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
 const Contact = () => {
   return (
@@ -9,11 +8,12 @@ const Contact = () => {
       <div className="paddings innerWidth flexCenter c-container">
         {/* left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
+          <span className="orangeText">How can you find us?</span>
           <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
+            We're not like the big players who might be unreachable. 
+            <br />
+            Let our team give you the bespoke and individualised support that you need.
           </span>
 
           <div className="flexColStart contactModes">
@@ -26,52 +26,23 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">0449 101 907</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <a className="flexCenter button" href="tel:+61449101907" alt="Call CNM Property">Call now</a>
               </div>
 
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Chat now</div>
-              </div>
-            </div>
-
-            {/* second row */}
-            <div className="flexStart row">
-              <div className="flexColCenter mode">
-                <div className="flexStart">
-                  <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
-                  </div>
-                  <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
-                  </div>
-                </div>
-                <div className="flexCenter button">Video Call now</div>
-              </div>
-
-              <div className="flexColCenter mode">
+              <div className="flexColCenter modeEmail">
                 <div className="flexStart">
                   <div className="flexCenter icon">
                     <HiChatBubbleBottomCenter size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Email</span>
+                    <span className="secondaryText">admin@cnmproperty.com.au</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <a className="flexCenter button" href="mailto:admin@cnmproperty.com.au">Email us</a>
               </div>
             </div>
           </div>
