@@ -35,9 +35,10 @@ const Header = () => {
             style={getMenuStyles(menuOpened)}
           >
             <AddPropertyModal opened={modalOpened} setOpened={setModalOpened} />
-            <button className="button secondaryTextBlack" onClick={handleAddPropertyClick}>
+            {/* TODO */}
+            {/* <button className="button secondaryTextBlack" onClick={handleAddPropertyClick}>
               Get My Valuation
-            </button>
+            </button> */}
           </div>
         </OutsideClickHandler>
 

@@ -54,6 +54,10 @@ const Contact = () => {
             <img src="./contact.jpg" alt="" />
           </div>
         </div>
+        <span className="orangeText">Current Properties: Search Properties to refine your search</span>
+        <iframe src="https://www.mantisproperty.com.au/_agents/generic/search.aspx?agent=503&searchbox=1" width="100%" height="500rem" frameborder="0" />
+        <span className="orangeText">Recently Sold</span>
+        <iframe src="https://www.mantisproperty.com.au/_agents/generic/realestate-for-sale.aspx?agent=503&sold=true&showheading=0" width="100%" height="500rem" frameborder="0" />
       </div>
     </div>
   );

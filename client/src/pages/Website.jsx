@@ -2,7 +2,6 @@ import React from 'react'
 import Companies from "../components/Companies/Companies";
 import Contact from "../components/Contact/Contact";
 import Hero from "../components/Hero/Hero";
-import Residencies from "../components/Residencies/Residencies";
 import Value from "../components/Value/Value";
 
 
@@ -14,8 +13,6 @@ const Website = () => {
       <Hero />
     </div>
     <Companies />
-    {/* Readd the below after sales */}
-    {/* <Residencies/> */}
     <Value/>
     <Contact/>
   </div>
